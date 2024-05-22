@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="no-js" lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah & Ethan</title>
+
+
+    <meta name="description" content="Sarah & Ethan">
+
+    <meta property="og:title" content="Sarah & Ethan">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/img/logoES.png">
+    <meta property="og:image:alt" content="">
+
+    <link rel="icon" href="/img/logoES.png" sizes="any">
+    <link rel="icon" href="/img/logoES.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/logoES.png">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+
+
+    <link rel="stylesheet" href="../exempleMariage4/css/commun.css">
+
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="../exempleMariage4/css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 480px)" href="../exempleMariage4/css/ordi.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+<div id="overlay">
+
+    <div id="divOverlay">
+
+        <img src="/img/logoES.png">
+        <a class="txtOverlay">Sarah & Ethan</a>
+
+        <div id="decompte">
+
+            <div class="elementDecompte">
+                <a id="jour" class="chiffreDecompte"> </a>
+                <a class="texteDecompte">Jours</a>
+
+            </div>
+            <div class="elementDecompte">
+                <a id="heure" class="chiffreDecompte"> </a>
+                <a class="texteDecompte">Heures</a>
+            </div>
+            <div class="elementDecompte">
+                <a id="minute" class="chiffreDecompte"> </a>
+                <a class="texteDecompte">Minutes</a>
+            </div>
+            <div class="elementDecompte2">
+                <a id="seconde" class="chiffreDecompte"> </a>
+                <a class="texteDecompte">Secondes</a>
+            </div>
+
+
+
+        </div>
+
+        <div>
+            <a id="close-overlay" class="btnLink" onclick="hideOverlay(); playMusic() "> <b>></b>
+                Voir l'invitation</a>
+        </div>
+
+    </div>
+</div>
+
+<nav class="navbar">
+   <a  class="navbar">   <img src="/img/logoES.png"> </a>
+</nav>
+
+
+<div class="principale">
+
+    <div class="carte">
+        <div class="bordureTitre">
+            <a class="titre">Mairie</a>
+        </div>
+        <br>
+        <a class="txtDroit">Jeudi 23 Mars 2025</a>
+        <br>
+        <a class="btnLink" href="mairie.html">Détails <b>></b></a>
+
+    </div>
+
+
+    <div class="carte">
+        <div class="bordureTitre">
+            <a class="titre">Houppa & Soirée</a>
+        </div>
+        <br>
+        <a class="txtDroit">Dimache 26 Mars 2025</a>
+        <br>
+        <a class="btnLink" href="houppa.html">Détails <b>></b></a>
+
+    </div>
+
+
+    <div class="carte">
+        <div class="bordureTitre">
+            <a class="titre">Chabbat</a>
+        </div>
+        <br>
+        <a class="txtDroit">Vendredi 24 Mars 2025</a>
+        <br>
+
+        <a class="btnLink" href="chabbat.html">Détails <b>></b></a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="reponse" class="elementPrincipal">
+
+        <div id="texteLogo">
+            <img src="../exempleMariage4/img/logoES.png" class="logo">
+        </div>
+        <br>
+        <div class="titre">
+            <a>Réponse</a>
+        </div>
+
+
+        <form action="send_email.php" method="post">
+            <div class="form-group">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="ne-pourront-assister" name="ne-pourront-assister">
+                <label for="ne-pourront-assister">Ne pourront pas assister</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="reception" name="reception">
+                <label for="reception">Assisteront à la réception</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="tephiline" name="chabbat">
+                <label for="tephiline">Assisteront au chabbat</label>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre de personnes:</label>
+                <input type="number" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <input type="submit" value="Envoyer">
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
+
+
+<script defer src="/js/coche.js"></script>
+<script defer src="/js/audio.js"></script>
+
+<script defer src="/js/countDown.js"></script>
+<script defer src="/js/script.js"></script>
+<!--<script defer src="/js/mailer.js"></script>-->
+<script defer src="/js/transition.js"></script>
+
+<!-- Script jQuery pour envoyer le formulaire via AJAX -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="/js/jsToPhpMail.js"></script>
+
+
+<footer>
+    <span>Raphael Arzoin</span>
+    <a href="https://www.instagram.com/rphl_arzoin/">
+        <img src="/img/logo-instagram.png" alt="Instagram" class="instagram-logo">
+    </a>
+</footer>
+
+
+</body>
+
+</html>

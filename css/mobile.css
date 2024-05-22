@@ -1,0 +1,344 @@
+#divOverlay{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    align-items: center;
+    justify-content: initial ;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0 3rem 0;
+    box-shadow: 0 2px 6px rgb(131, 131, 131);
+
+
+}
+
+#divOverlay img{
+    width: 30%;
+    height: auto;
+    margin-bottom: 0.5rem;
+
+}
+
+.txtOverlay{
+    font-family: pinyon, sans-serif;
+    font-size: 3rem;
+    color: #ddcfc6;
+    margin-bottom: 1.2rem;
+}
+
+.btnLink{
+    background-color: #d6c5bc;
+    font-size: 0.8rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8rem ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    text-align: center;
+    width: 5rem;
+
+
+}
+.btnLink{
+    background-color: #d6c5bc;
+    font-size: 0.8rem;
+    font-family: DMSerif, sans-serif;
+    padding: 0.8rem ;
+    color: #ffffff;
+    border-radius: 0.2rem;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#decompte{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    margin-bottom: 3rem;
+}
+.elementDecompte{
+    margin-right: 1rem;
+    border: 2px solid #eae2dd;
+    width: 60px; /* Largeur fixe pour une taille uniforme */
+    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.elementDecompte2{
+    border: 2px solid #eae2dd;
+    width: 60px; /* Largeur fixe pour une taille uniforme */
+    height: 50px; /* Hauteur fixe pour une taille uniforme */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.texteDecompte{
+    font-family: pinyon, sans-serif;
+    font-size: 1.2rem;
+    color: #decec1;
+}
+
+.chiffreDecompte{
+    color: #decec1;
+    font-family: DMSerif,sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 70px; /* Définit une hauteur fixe pour la navbar */
+    display: flex;
+    align-items: center; /* Centre verticalement les éléments de la navbar */
+    box-shadow: 0 2px 6px rgb(131, 131, 131); /* Ajoute une ombre en bas */
+    padding: 0.5rem;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar img{
+    height: 100%;
+}
+
+
+.elementPrincipal{
+    background-color: rgb(255,255,255);
+    width: 92%;
+    height: auto;
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+    border: 3px solid #d4c3bb;
+    box-shadow: 0 2px 6px rgb(131, 131, 131);
+    padding-bottom: 2rem;
+}
+
+#texteLogo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#texteLogo img{
+    width: 40%;
+}
+
+
+.txtItalic{
+    font-family: pinyon,sans-serif;
+    font-size: 2.5rem;
+    color: #ddcfc6;
+    margin-bottom: 1.5rem;
+}
+
+.txtDroit {
+    font-family: cormorand, sans-serif;
+    font-style: italic;
+    font-size: 5.5vw;
+    color: #232323;
+    margin-bottom: 0.6rem;
+
+}
+
+.txtDroitGras {
+    font-family: DMSerif, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #232323;
+
+
+
+}
+
+.titre{
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; font-family: pinyon,sans-serif;
+    font-size: 11vw;
+    color: #d2c1ba;
+    margin-bottom: 1.5rem;
+
+}
+.titreElementPrincipale{
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; font-family: pinyon,sans-serif;
+    font-size: 14vw;
+    color: #d2c1ba;
+    margin-bottom: 1.5rem;
+
+}
+
+
+.kolSason{
+    width: 96%;
+}
+
+.parent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+
+
+
+
+}
+
+.parentGauche{
+    padding-left: 1rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.parentDroit{
+    width: 45%;
+    text-align: right;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.txtParent {
+    font-family: cormorand, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #232323;
+
+}
+
+
+
+/* Form Styles */
+/* Form Styles */
+
+
+form label {
+    font-family: cormorand, sans-serif;
+    font-size: 1.2rem;
+    color: #232323;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+
+
+
+}
+
+form label {
+    font-family: cormorand, sans-serif;
+    font-size: 1.2rem;
+    color: #232323;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cac4e2;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+form input[type="submit"] {
+    background-color: #d4c3bb;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-family: DMSerif, sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #cbbcb5;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+
+.carte{
+    margin-top: 2rem;
+    width: 85%;
+    height: auto;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 2px 6px rgb(131, 131, 131);
+    padding: 1rem;
+    flex-direction: column;
+    border: 3px solid #d4c3bb;
+
+}
+
+
+
+
+
+.bordureTitre{
+    border-bottom: 3px solid #d4c3bb;
+    width: 100%;
+}
+
+
