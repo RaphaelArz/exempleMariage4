@@ -1,14 +1,12 @@
 #divOverlay{
     width: 90%;
-    height: auto;
+    height: 30%;
     background-color: white;
     align-items: center;
     justify-content: initial ;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0 3rem 0;
-    box-shadow: 0 2px 6px rgb(131, 131, 131);
-
+    padding: 3rem 0 7rem 0;
 
 }
 
@@ -22,32 +20,18 @@
 .txtOverlay{
     font-family: pinyon, sans-serif;
     font-size: 3rem;
-    color: #ddcfc6;
+    color: #cac4e2;
     margin-bottom: 1.2rem;
 }
 
 .btnLink{
-    background-color: #d6c5bc;
-    font-size: 0.8rem;
+    background-color: #f0c9ce;
+    font-size: 1rem;
     font-family: DMSerif, sans-serif;
     padding: 0.8rem ;
     color: #ffffff;
     border-radius: 0.2rem;
-    text-align: center;
-    width: 5rem;
-
-
-}
-.btnLink{
-    background-color: #d6c5bc;
-    font-size: 0.8rem;
-    font-family: DMSerif, sans-serif;
-    padding: 0.8rem ;
-    color: #ffffff;
-    border-radius: 0.2rem;
-    text-align: center;
-    text-decoration: none;
-
+    margin: 2.2rem;
 }
 
 #decompte{
@@ -61,7 +45,7 @@
 }
 .elementDecompte{
     margin-right: 1rem;
-    border: 2px solid #eae2dd;
+    border: 2px solid #eec7cc;
     width: 60px; /* Largeur fixe pour une taille uniforme */
     height: 50px; /* Hauteur fixe pour une taille uniforme */
     align-items: center;
@@ -70,7 +54,7 @@
     flex-direction: column;
 }
 .elementDecompte2{
-    border: 2px solid #eae2dd;
+    border: 2px solid #eec7cc;
     width: 60px; /* Largeur fixe pour une taille uniforme */
     height: 50px; /* Hauteur fixe pour une taille uniforme */
     align-items: center;
@@ -82,11 +66,10 @@
 .texteDecompte{
     font-family: pinyon, sans-serif;
     font-size: 1.2rem;
-    color: #decec1;
+    color: #cac4e2;
 }
-
 .chiffreDecompte{
-    color: #decec1;
+    color: #cac4e2;
     font-family: DMSerif,sans-serif;
     font-size: 1.3rem;
     align-items: center;
@@ -95,9 +78,9 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #cac4e2;
     overflow: hidden;
-    height: 70px; /* Définit une hauteur fixe pour la navbar */
+    height: 60px; /* Définit une hauteur fixe pour la navbar */
     display: flex;
     align-items: center; /* Centre verticalement les éléments de la navbar */
     box-shadow: 0 2px 6px rgb(131, 131, 131); /* Ajoute une ombre en bas */
@@ -109,25 +92,37 @@
 
 }
 
-.navbar img{
-    height: 100%;
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-right: 1rem;
+
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: cormorand,sans-serif;
+    font-size: 1.2rem;
 }
 
 
+
 .elementPrincipal{
-    background-color: rgb(255,255,255);
+    background-color: rgb(255,255,255,0.88);
     width: 92%;
-    height: auto;
     padding-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 3rem;
-    border: 3px solid #d4c3bb;
-    box-shadow: 0 2px 6px rgb(131, 131, 131);
-    padding-bottom: 2rem;
 }
 
 #texteLogo {
@@ -145,14 +140,14 @@
 .txtItalic{
     font-family: pinyon,sans-serif;
     font-size: 2.5rem;
-    color: #ddcfc6;
+    color: #b3aec8;
     margin-bottom: 1.5rem;
 }
 
 .txtDroit {
     font-family: cormorand, sans-serif;
     font-style: italic;
-    font-size: 5.5vw;
+    font-size: 1.2rem;
     color: #232323;
     margin-bottom: 0.6rem;
 
@@ -171,28 +166,17 @@
 }
 
 .titre{
+    font-family: cormorand, sans-serif;
     font-weight: bolder;
+    font-size: 3rem;
+    color: #f0c9ce;
+    margin-bottom: 5.5rem;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: column; font-family: pinyon,sans-serif;
-    font-size: 11vw;
-    color: #d2c1ba;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
 
 }
-.titreElementPrincipale{
-    font-weight: bolder;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; font-family: pinyon,sans-serif;
-    font-size: 14vw;
-    color: #d2c1ba;
-    margin-bottom: 1.5rem;
-
-}
-
 
 .kolSason{
     width: 96%;
@@ -298,7 +282,7 @@ form input[type="checkbox"] {
 }
 
 form input[type="submit"] {
-    background-color: #d4c3bb;
+    background-color: #f0c9ce;
     color: #ffffff;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -309,7 +293,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #cbbcb5;
+    background-color: #e0b5ba;
 }
 
 form textarea {
@@ -317,28 +301,5 @@ form textarea {
 }
 
 
-.carte{
-    margin-top: 2rem;
-    width: 85%;
-    height: auto;
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    box-shadow: 0 2px 6px rgb(131, 131, 131);
-    padding: 1rem;
-    flex-direction: column;
-    border: 3px solid #d4c3bb;
-
-}
-
-
-
-
-
-.bordureTitre{
-    border-bottom: 3px solid #d4c3bb;
-    width: 100%;
-}
 
 
