@@ -44,6 +44,13 @@
   src:  url('/police/CormorantGaramond-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Membra';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('/police/membra.ttf') format('truetype');
+}
+
 
 /* Styles for the overlay */
 #overlay {
@@ -91,9 +98,10 @@ background-image: url("/img/paterneCouleurSable1.jpg") ;
 
 span {
   color: #333; /* Couleur du texte */
-  font-size: 1rem; /* Taille du texte */
+  font-size: 1.5rem; /* Taille du texte */
   display: block; /* Pour que le texte apparaisse sur une ligne séparée */
   margin-bottom: 10px; /* Espacement entre le texte et l'icône Instagram */
+  font-family: Membra;
 }
 
 .instagram-logo {
