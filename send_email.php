@@ -23,8 +23,11 @@ try {
     $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : '';
     $nePourrontAssister = isset($_POST['ne-pourront-assister']);
     $reception = isset($_POST['reception']) ? 'Assisteront à la réception' : '';
-    $tephiline = isset($_POST['tephiline']) ? 'Assisteront au chabbat' : '';
-    $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
+    $chabbat = isset($_POST['chabbat']) ? 'Assisteront au chabbat' : '';
+    $nombreAdultesReception = isset($_POST['nombreAdultesReception']) ? $_POST['nombreAdultesReception'] : '';
+    $nombreEnfantsReception = isset($_POST['nombreEnfantsReception']) ? $_POST['nombreEnfantsReception'] : '';
+    $nombreAdultesChabbat = isset($_POST['nombreAdultesChabbat']) ? $_POST['nombreAdultesChabbat'] : '';
+    $nombreEnfantsChabbat = isset($_POST['nombreEnfantsChabbat']) ? $_POST['nombreEnfantsChabbat'] : '';
     $message = isset($_POST['message']) ? $_POST['message'] : '';
 
     // Construire le nom de l'expéditeur
@@ -78,9 +81,16 @@ try {
         $corpsEmail .= "<p><strong>Participation :</strong> Ne pourront pas assister</p>";
     } else {
         $corpsEmail .= "<p><strong>Participation :</strong></p>";
-        $corpsEmail .= "<p>$reception</p>";
-        $corpsEmail .= "<p>$tephiline</p>";
-        $corpsEmail .= "<p><strong>Nombre de personnes :</strong> $nombre</p>";
+        if ($reception) {
+            $corpsEmail .= "<p>$reception</p>";
+            $corpsEmail .= "<p>Nombre d'adultes à la réception : $nombreAdultesReception</p>";
+            $corpsEmail .= "<p>Nombre d'enfants à la réception : $nombreEnfantsReception</p>";
+        }
+        if ($chabbat) {
+            $corpsEmail .= "<p>$chabbat</p>";
+            $corpsEmail .= "<p>Nombre d'adultes au chabbat : $nombreAdultesChabbat</p>";
+            $corpsEmail .= "<p>Nombre d'enfants au chabbat : $nombreEnfantsChabbat</p>";
+        }
     }
 
     $corpsEmail .= "<div class='message'>

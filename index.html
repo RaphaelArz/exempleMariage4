@@ -138,7 +138,7 @@
         </div>
 
 
-        <form action="send_email.php" method="post">
+        <form id="myForm" action="send_email.php" method="post">
             <div class="form-group">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
@@ -155,13 +155,29 @@
                 <input type="checkbox" id="reception" name="reception">
                 <label for="reception">Assisteront à la réception</label>
             </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="tephiline" name="chabbat">
-                <label for="tephiline">Assisteront au chabbat</label>
+            <div id="receptionField" class="hidden">
+                <div>
+                    <label for="nombreAdultesReception">Nombre d'adultes à la réception:</label>
+                    <input type="number" id="nombreAdultesReception" name="nombreAdultesReception">
+                </div>
+                <div>
+                    <label for="nombreEnfantsReception">Nombre d'enfants à la réception:</label>
+                    <input type="number" id="nombreEnfantsReception" name="nombreEnfantsReception">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="nombre">Nombre de personnes:</label>
-                <input type="number" id="nombre" name="nombre">
+            <div class="checkbox-group">
+                <input type="checkbox" id="chabbat" name="chabbat">
+                <label for="chabbat">Assisteront au chabbat</label>
+            </div>
+            <div id="chabbatField" class="hidden">
+                <div>
+                    <label for="nombreAdultesChabbat">Nombre d'adultes au chabbat:</label>
+                    <input type="number" id="nombreAdultesChabbat" name="nombreAdultesChabbat">
+                </div>
+                <div>
+                    <label for="nombreEnfantsChabbat">Nombre d'enfants au chabbat:</label>
+                    <input type="number" id="nombreEnfantsChabbat" name="nombreEnfantsChabbat">
+                </div>
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
@@ -169,6 +185,10 @@
             </div>
             <input type="submit" value="Envoyer">
         </form>
+
+
+
+
 
     </div>
 
@@ -182,6 +202,33 @@
 
 
 </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const receptionCheckbox = document.getElementById('reception');
+        const chabbatCheckbox = document.getElementById('chabbat');
+        const receptionField = document.getElementById('receptionField');
+        const chabbatField = document.getElementById('chabbatField');
+
+        receptionCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                receptionField.classList.remove('hidden');
+            } else {
+                receptionField.classList.add('hidden');
+            }
+        });
+
+        chabbatCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                chabbatField.classList.remove('hidden');
+            } else {
+                chabbatField.classList.add('hidden');
+            }
+        });
+    });
+</script>
+
 
 
 <audio id="myAudio" src="/musique/vehisheamda.mp3"></audio>
