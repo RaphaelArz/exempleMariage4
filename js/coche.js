@@ -1,7 +1,7 @@
 // Sélection des cases à cocher
 var nePourrontAssisterCheckbox = document.getElementById('ne-pourront-assister');
 var receptionCheckbox = document.getElementById('reception');
-var tephilineCheckbox = document.getElementById('tephiline');
+var tephilineCheckbox = document.getElementById('chabbat');
 
 // Écouteurs d'événements sur le changement des cases à cocher
 receptionCheckbox.addEventListener('change', function() {
